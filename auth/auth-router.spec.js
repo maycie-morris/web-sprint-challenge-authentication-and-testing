@@ -5,7 +5,7 @@ describe("register", () => {
   it("should return json", () => {
     return request(server)
       .post("/api/auth/register")
-      .send({ username: "cody", password: "pass" })
+      .send({ username: "mayciem", password: "password" })
       .then(res => {
         expect(res.type).toBe("application/json");
       });
